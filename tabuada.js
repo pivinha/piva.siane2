@@ -6,8 +6,8 @@ frm.addEventListener("submit", (e) =>{
 
     const numero = Number(frm.inNumero.value)
     let resposta = ""
-    for(let i = i; i <=10; i++){
-        resposta = resposta + numero + " x " + i + " = " + (numero = i) + "\n"
+    for(let i = 1; i <=10; i++){
+        resposta = resposta + numero + " x " + i + " = " + (numero * i) + "\n"
     }
     resp.innerText = resposta
 
