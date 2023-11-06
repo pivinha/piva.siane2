@@ -1,11 +1,11 @@
-const form = document.querySelector("form")
+const frm = document.querySelector("form")
 const resp = document.querySelector("h4")
 
-form = addEventListener("submit", (e) =>{
+frm.addEventListener("submit", (e) =>{
     e.preventDefault()
     
-    const pessoas = Number(form.inNumero.value)
-    const peixes = Number(form.inCondutor.value)
+    const pessoas = Number(frm.inNumero.value)
+    const peixes = Number(frm.inPeixes.value)
     let resultado
         if(peixes > pessoas){
             resultado = (pessoas * 20) + ((peixe - pessoas) * 12)
