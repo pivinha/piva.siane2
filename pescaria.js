@@ -5,15 +5,15 @@ frm.addEventListener("submit", (e) =>{
     e.preventDefault()
     
     const pessoas = Number(frm.inNumero.value)
-    const peixes = Number(frm.inPeixes.value)
+    const peixe = Number(frm.inPeixe.value)
     let resultado
-        if(peixes > pessoas){
-            resultado = (pessoas * 20) + ((peixe - pessoas) * 12)
+        if(peixe > pessoas) {
+        resultado = (pessoas * 20) + ((peixe - pessoas) * 12)
         } else {
-        resultado = pessoas* 20
+        resultado = pessoas * 20
         }
 
         resp.innerText = `N° de pessoas: ${pessoas}\n
-                          N° de peixes: ${peixes}\n
+                          N° de peixe: ${peixe}\n
                           pagar: R$ ${resultado.toFixed(2)}`
 })
